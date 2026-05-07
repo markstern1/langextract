@@ -53,7 +53,7 @@ Changelog = "https://github.com/langextract/langextract/blob/main/CHANGELOG.md"
 where = ["src"]
 
 [tool.ruff]
-line-length = 88  # personal preference: match black's default
+line-length = 100  # bumped from 88 — easier to read longer type annotations
 target-version = "py310"
 
 [tool.ruff.lint]
