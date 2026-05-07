@@ -68,6 +68,9 @@ python_version = "3.10"
 strict = true
 warn_return_any = true
 warn_unused_configs = true
+# I find these two a bit noisy during exploratory work in notebooks/scripts
+warn_unused_ignores = false
+disallow_untyped_calls = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
