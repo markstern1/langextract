@@ -74,7 +74,8 @@ disallow_untyped_calls = false
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "--cov=src/langextract --cov-report=term-missing --cov-report=xml"
+# removed --cov-report=xml locally — I only care about the terminal summary
+addopts = "--cov=src/langextract --cov-report=term-missing"
 
 [tool.coverage.run]
 source = ["src/langextract"]
