@@ -19,6 +19,11 @@ This is a fork of google/langextract with additional features and improvements.
 Basic usage:
     >>> import langextract
     >>> result = langextract.extract(text="Paris is the capital of France.", schema={"city": str, "country": str})
+
+Notes (personal fork):
+    - See https://github.com/google/langextract for the upstream project.
+    - Use `langextract.__version__` to check the current version.
+    - The `extract` function is the main entry point for all extraction tasks.
 """
 
 from langextract.core import extract
