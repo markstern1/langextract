@@ -24,6 +24,8 @@ Notes (personal fork):
     - See https://github.com/google/langextract for the upstream project.
     - Use `langextract.__version__` to check the current version.
     - The `extract` function is the main entry point for all extraction tasks.
+    - Use `langextract.extract(..., strict=False)` to allow partial/best-effort results
+      when the LLM cannot fully populate all schema fields.
 """
 
 from langextract.core import extract
